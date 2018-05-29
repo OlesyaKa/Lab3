@@ -16,6 +16,7 @@ namespace ConsoleApp1
             var assembly = Assembly.GetExecutingAssembly();
             var fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
             var version = fileVersionInfo.ProductVersion;
+            Console.WriteLine("Версия вашего приложения:");
             Console.WriteLine(version);
             Console.Read();
 
